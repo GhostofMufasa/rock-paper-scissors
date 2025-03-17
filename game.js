@@ -31,4 +31,11 @@ function playRound(humanChoice, computerChoice) {
 function playGame() {
     let humanScore = 0;
     let computerScore = 0;
+
+    for (let i = 0; i < 5; i++) {
+        console.log(`Round ${i + 1}`);
+        let humanChoice = getHumanChoice();
+        let computerChoice = getComputerChoice();
+        let roundWinner = playRound(humanChoice, computerChoice);
+    }
 }
