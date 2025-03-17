@@ -9,8 +9,6 @@ function getHumanChoice() {
     return userInput.toLowerCase();
 }
 
-let humanScore = 0;
-let computerScore = 0;
 
 function playRound(humanChoice, computerChoice) {
     humanChoice = humanChoice.toLowerCase();
@@ -30,6 +28,7 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
-const humanChoice = getHumanChoice();
-const computerChoice = getComputerChoice();
-playRound(humanChoice, computerChoice);
+function playGame() {
+    let humanScore = 0;
+    let computerScore = 0;
+}
